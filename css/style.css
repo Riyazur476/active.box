@@ -1,0 +1,593 @@
+/* 
+    1.common css
+    2.margin css
+    3.make selected color & background css
+    4.font import ends
+    5.menu css ends
+    6. banner css ends 
+    7.service-item css ends 
+    8.gallery part css
+    9.team section css
+    10.blog section css 
+    11.blog closing text css
+    12.top footer css 
+    13.bottom footer csss 
+
+*/
+/*========================
+   Table of Content ends
+==========================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+.full-wrapper{
+    width: 100%;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/*~~~~~~~~~~~~~~~ 
+common css ends 
+~~~~~~~~~~~~~~~~~*/
+.m-30{
+    margin: 0 30px;
+}
+.mt-60{
+    margin-top: 60px;
+}
+.m-4{
+    margin: 4px;
+}
+.m-28{
+    margin-left: 29px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-66{
+    margin-top: 66px;
+}
+/* margin css */
+::selection {
+    background-color: rgba(3, 5, 3, 0.774);
+    color: rgb(200, 200, 200);
+}
+/* make selected color & background css */
+@font-face{
+    font-family: 'Raleway';
+    src: url(../fonts/raleway/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: 'raleway-reg';
+    src: url(../fonts/raleway/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: 'raleway-semi';
+    src: url(../fonts/raleway/Raleway-SemiBold.ttf);
+}@font-face {
+    font-family: 'Raleway-light';
+    src: url(../fonts/raleway/Raleway-light.ttf);
+}
+/* 
+  font-family: 'Open Sans', sans-serif;
+*/
+/*~~~~~~~~~~~~~~~~~ 
+   font import ends 
+~~~~~~~~~~~~~~~~~~~*/
+.menu-bg{
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+}
+.menu-bg .menu{
+    height: 100%;
+}
+.menu-bg .menu .logo{
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+.menu-bg .menu .logo img{
+    width: 100%;
+    padding-top: 38px;
+}
+.menu-bg .menu .menu-list{
+    width: 970px;
+    height: 100px;
+    float: left;
+}
+.menu-bg .menu .menu-list ul {
+    float: right;
+} 
+.menu-bg .menu .menu-list ul li{
+    float: left;
+}
+.menu-bg .menu .menu-list ul li a{
+    line-height: 100px;
+    color: #fff;
+    padding-left: 60px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    transition: all 0.3s linear;
+}
+.menu-bg .menu .menu-list ul li:hover > a{
+    color: #e84545;
+}
+.menu-bg .menu .menu-list ul li .active{
+    color: #e84545;    
+}
+/* ~~~~~~~~~~~~~~~ 
+   menu css ends 
+   ~~~~~~~~~~~~~~~~~ */
+.banner-bg{
+    height: 750px;
+    background: url(../images/big.jpg) no-repeat center / cover ;
+    position: relative;
+    z-index: 1;
+}
+.banner-bg::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 46, 74, 0.95);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.banner-bg .banner{
+    height: 750px;
+    text-align: center;
+
+}
+.banner-bg .banner h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 71px;
+    padding: 241px 150px 25px;
+}
+.banner-bg .banner p{
+    font-family: 'raleway-reg';
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 21px;
+    line-height: 33px;
+    padding: 0 125px 73px;
+}
+.banner-bg .banner a{
+    display: inline-block;
+    color: #fff;
+    background: #e84545;
+    font-family: 'raleway-semi';
+    text-transform: uppercase;
+    line-height: 46px;
+    padding: 0 65px 0;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.banner-bg .banner a:hover{
+    background: #fff;
+    color: #e84545;
+}
+/*~~~~~~~~~~~~~~~~ 
+  banner css ends 
+~~~~~~~~~~~~~~~~~~*/
+.service-bg{
+    height: 520px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.service-bg .service{
+    height: 100%;
+}
+.service-bg .service .service-item{
+    width: 370px;
+    height: 185px;
+    text-align: center;
+    float: left;
+}
+.service-bg .service .service-item img{
+    transition: all 0.1s linear;
+}
+.service-bg .service .service-item img:hover{
+    transform: scale(1.2) ;
+}
+.service-bg .service .service-item h5{
+    font-size: 14px;
+    font-family: 'Raleway';
+    color: #2d3033;
+    text-transform: uppercase;
+    margin: 30px 0 20px;
+}
+.service-bg .service .service-item p{
+    font-size: 14px;
+    font-family: 'Raleway';
+    line-height: 21px;
+    padding: 0 28px;
+    color: #6c7279;
+} 
+/*~~~~~~~~~~~~~~~~~~~~~~ 
+  service-item css ends 
+~~~~~~~~~~~~~~~~~~~~~~~~*/
+.gallery .gallery-item{
+    width: 25%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+}
+.gallery .gallery-item img{
+    width: 100%;
+    height: 349px;
+    animation: img 0.2s linear;
+}
+.gallery .gallery-item .gallery-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232, 69, 69, 0.9);
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    text-align: center;
+    transition: all linear 0.4s; 
+}
+.gallery .gallery-item:hover .gallery-overlay{
+    right: 0;
+    top: 0; 
+}
+.gallery .gallery-item .gallery-overlay h6{
+    font-family: 'Raleway';
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.gallery .gallery-item .gallery-overlay .overlay-text{
+    position: absolute;
+    top: 50%;
+    transform: translateX(100%);
+}
+.gallery .gallery-item .gallery-overlay p{
+    font-family: 'raleway-reg';
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize; 
+}
+/*~~~~~~~~~~~~~~~~~~~~~~ 
+  gallery css ends 
+~~~~~~~~~~~~~~~~~~~~~~~~*/
+.team-bg{
+    height: 580px;
+    margin-top: 100px;
+    margin-bottom: 71px;
+}
+.team-bg .team{
+    height: 580px;        
+}
+.team-bg .team .team-item{
+    width: 270px;
+    float: left; 
+}
+.team-bg .team .team-item .skew{
+    position: relative; 
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+
+}
+.team-bg .team .team-item .skew::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 270px;
+    top: 0;
+    left: 350px;
+    background-color: rgba(255,255,255,0.3);
+    transform: skewX(30deg);
+    transition: 0.5s ;
+}
+.team-bg .team .team-item .skew:hover:before{
+     left: -500px; 
+}
+.team-bg .team .team-item h4{
+    font-size: 22px;
+    font-family: 'Raleway';
+    font-weight: 100;                                     
+    color: #2d3033;
+    padding: 30px 0 5px;
+    text-transform: uppercase;
+
+}
+.team-bg .team .team-item span{
+    font-size: 13px;
+    font-family: 'raleway-semi';                                     
+    color: #e84545;
+    text-transform: uppercase;
+    
+}
+.team-bg .team .team-item p{
+    font-size: 14px;
+    font-family: 'raleway-reg';                                     
+    color: #6c7279;
+    padding-top: 24px;
+    
+}
+
+.team-bg .team .team-item .button-team{
+   height: 40px;
+  
+}
+.team-bg .team .team-item .btn{  
+    position: relative;
+    float: left;
+    margin-top: 29px;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.team-bg .team .team-item .btn a i{
+    height: 40px;
+    width: 40px;
+    color: #c6cacc;
+    border: 1px solid #c6cacc;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+.team-bg .team .team-item .btn:hover{
+     background:  #e84545;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~ 
+  team css ends 
+~~~~~~~~~~~~~~~~~~~~~~~~*/
+.blog-bg{
+    height: 500px;
+    background: #53354a;
+    position: relative;
+
+}
+.blog-bg .blog-img{
+    width: 50%;
+    height: 100%;
+    float: left; 
+    background: #fff;
+}
+.blog-bg::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: url(../images/bg-1.jpg) no-repeat center / cover;
+    animation: slide 2.5s linear forwards 2;
+    transform: translateX(-1000px);
+}
+@keyframes slde{
+    100%{
+        transform: translateX(0);
+    }
+}
+.blog-bg .blog-text{
+    width: 50%;
+    height: 500px;
+    float: left;
+    animation: slide 2.5s linear forwards 2;
+    transform: translateX(1000px);
+}
+@keyframes slide{
+    100%{
+        transform: translateX(0);
+    }
+}
+.blog-bg .blog-text h3{
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Cardo', serif;
+    line-height: 42px;
+    padding-top: 113px;
+    padding-left: 99px;
+
+}
+.blog-bg .blog-text p{
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    line-height: 21px;
+    margin-left: 99px;
+    margin-top: 26px;
+}
+.blog-bg .curvic-box{
+    position: absolute;
+    top: 380px;
+    left: 1234px;
+    width: 100px;
+    height: 30px;
+}
+.blog-bg .curvic-box ul li{
+    background-color: rgba(2555,255,255,0.2);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 8px;
+    transform: translateX(-50%);
+}
+.blog-bg .curvic-box ul .activ{
+    background-color: #fff;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~ 
+ blog css ends 
+~~~~~~~~~~~~~~~~~~~~~~~~*/
+.blog-end-text-bg{
+    margin-top: 99px;
+}
+.blog-end-text{
+    height: 150px;
+    text-align: center;
+    position: relative;
+}
+.blog-end-text p{
+    font-size: 28px;
+    font-family: 'Raleway-light';
+    text-transform: capitalize;
+}
+.blog-end-text .p{
+    font-size: 13px;
+    padding: 10px 0 0;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+}
+.blog-end-text a{
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: 94px;
+    left: 445px;
+    font-family: 'raleway-semi';
+    text-transform: uppercase;
+    background-color: #e84545;
+    color: #fff;
+    padding: 18px 77px;
+    border-radius: 4px;
+    transition: all 0.4s linear cubic-bezier(0.6, 0.04, 0.98, 0.335);
+
+}
+.blog-end-text a:hover{
+    background-color: #fff;
+    color: #e84545;
+    border: 1px solid #e84545;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ blog closing text css ends 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.footer-bg{
+    margin-top: 95px;
+    height: 250px;
+    background-color: #3a3e64;
+}
+.footer{
+    height: 250px;
+}
+.footer .address{
+    width: 270px;
+    height: 90px;
+    text-align: center;
+    float: left;
+    margin-left: 100px;
+}
+.footer .address p{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+}
+.footer .address .pp{
+    font-size: 14px;
+    line-height: 22.5px;
+    font-family: 'raleway-reg';                                     
+    color: #6c7279;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+.footer .address .pp:hover{
+    color: #e84545;
+}
+.footer .footer-icon{
+    float: left;
+    width: 270px;
+    height: 90px;
+    text-align: center;
+}
+
+.footer .footer-icon p{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Raleway'; 
+    text-transform: uppercase;
+}
+
+.footer .footer-icon a i{
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 40px;
+    
+}
+.footer .footer-icon a:hover i{
+    
+    background-color: #e84545;
+}
+.footer .active-box{
+    float: left;
+    width: 370px;
+    height: 99px;
+    text-align: center;
+}
+.footer .active-box p{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Raleway'; 
+    text-transform: uppercase;
+
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ top footer css ends 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.bottom-f-bg{
+    height: 92px;
+    background-color: #313454;
+}
+.bottom-f{
+    padding: 29px;
+    width: 370px;
+    height: 90px;
+    text-align: center;
+}
+.bottom-f p{
+    font-size: 13px;
+    line-height: 22.5px;
+    color: #808080;
+    font-family: 'Raleway'; 
+    text-transform: capitalize;
+}
+.bottom-f p:hover{
+    color: #e84545;
+}
+.bottom-f i{
+    color: #e84545;
+}
+.bottom-f span{
+    font-family: 'raleway-reg';
+    color: #fff;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ bottom footer css ends 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
